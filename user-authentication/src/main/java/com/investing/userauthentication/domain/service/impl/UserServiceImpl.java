@@ -26,9 +26,6 @@ public class UserServiceImpl implements GenericService<User> {
     @Autowired
     private UserRepository userRepository;
 
-    @Value("${mock-url}")
-    private String url;
-
     Random random = new Random();
 
     Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
